@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Current date in various format</title>
+	</head>
+	<body>
+		<script>
+			var dd = new Date().getDate();
+			var mm = new Date().getMonth()+1; 
+			var yyyy = new Date().getFullYear();
+	
+			if(dd<10) 
+				dd='0'+dd;
+			if(mm<10) 
+				mm='0'+mm;
+	
+			document.write(mm+'-'+dd+'-'+yyyy+"<br/>");
+			document.write(mm+'/'+dd+'/'+yyyy+"<br/>");
+			document.write(dd+'-'+mm+'-'+yyyy+"<br/>");
+			document.write(dd+'/'+mm+'/'+yyyy+"<br/>");
+		</script>
+	</body>
+</html>
